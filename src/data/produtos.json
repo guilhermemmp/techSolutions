@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nome": "God of War",
+    "imagem": "https://cdn.awsli.com.br/600x450/138/138431/produto/40012467c327e7fbe8.jpg",
+    "descricao": "Careca destruindo deuses gregos."
+  },
+  {
+    "id": 2,
+    "nome": "Dragon Ball Z Budokai Tenkaichi 3",
+    "imagem": "https://cdn.awsli.com.br/600x450/1211/1211986/produto/121311903/a7bb6fbe38.jpg",
+    "descricao": "Lutas explosivas do Dragon Ball."
+  },
+  {
+    "id": 3,
+    "nome": "Lego Star Wars 2",
+    "imagem": "https://cdn.awsli.com.br/2500x2500/138/138431/produto/25898103/a2c21751e5.jpg",
+    "descricao": "Star Wars em versão LEGO."
+  },
+  {
+    "id": 4,
+    "nome": "Black",
+    "imagem": "https://cdn.awsli.com.br/800x800/138/138431/produto/379864351bddcc46bf.jpg",
+    "descricao": "FPS pesado cheio de explosões."
+  },
+  {
+    "id": 5,
+    "nome": "Midnight Club 3 DUB Edition Remix",
+    "imagem": "https://cdn.awsli.com.br/600x450/138/138431/produto/272340760/mp2-2797-g-auo43dk237.jpg",
+    "descricao": "Corrida de rua com tuning."
+  },
+  {
+    "id": 6,
+    "nome": "Ben 10 Protector of Earth",
+    "imagem": "https://cdn.awsli.com.br/2500x2500/138/138431/produto/360950164/mp2-5246-g-j56p3e5nlr.jpg",
+    "descricao": "Transformações alienígenas em ação."
+  },
+  {
+    "id": 7,
+    "nome": "Grand Theft Auto: San Andreas",
+    "imagem": "https://cdn.awsli.com.br/800x800/138/138431/produto/7989213/a2dd1c5b9b.jpg",
+    "descricao": "Crime e caos em mundo aberto."
+  },
+  {
+    "id": 8,
+    "nome": "Shadow of the Colossus",
+    "imagem": "https://cdn.awsli.com.br/2500x2500/138/138431/produto/19948447/ff2ab6bd70.jpg",
+    "descricao": "Batalhas épicas contra gigantes."
+  },
+  {
+    "id": 9,
+    "nome": "Resident Evil 4",
+    "imagem": "https://cdn.awsli.com.br/2500x2500/138/138431/produto/285540392/mp2-2825-g-klrftrto92.jpg",
+    "descricao": "Terror e sobrevivência intensa."
+  },
+  {
+    "id": 10,
+    "nome": "Need for Speed Underground 2",
+    "imagem": "https://cdn.awsli.com.br/2500x2500/138/138431/produto/80047811296209c0a9.jpg",
+    "descricao": "Corridas noturnas com tuning."
+  },
+  {
+    "id": 11,
+    "nome": "Devil May Cry",
+    "imagem": "https://cdn.awsli.com.br/2500x2500/138/138431/produto/11328584/d2dcf54425.jpg",
+    "descricao": "Combate estiloso contra demônios."
+  },
+  {
+    "id": 12,
+    "nome": "Silent Hill 2",
+    "imagem": "https://cdn.awsli.com.br/2500x2500/138/138431/produto/30983555/8a2160bfe9.jpg",
+    "descricao": "Terror psicológico na neblina."
+  }
+]

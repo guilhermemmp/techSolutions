@@ -4,14 +4,17 @@ import './menu.css';
 
 const Menu = () => {
     return (
-        <nav>
+        
+        <nav className="menu">
+            <h1 className='logo'>Cansei</h1>
             <ul>
-                <Link to={"/"}><li>Home</li></Link>
-                <Link to={"/produtos"}><li>Produtos</li></Link>
-                <Link to={"/empresa"}><li>Empresa</li></Link>
-                <Link to={"/contato"}><li>Contato</li></Link>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/produtos">Produtos</Link></li>
+                <li><Link to="/empresa">Empresa</Link></li>
+                <li><Link to="/contato">Contato</Link></li>
             </ul>
         </nav>
+
     );
 };
 

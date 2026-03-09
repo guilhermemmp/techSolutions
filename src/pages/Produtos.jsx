@@ -1,14 +1,31 @@
-import React from 'react';
-import Menu from '../components/menu/menu';
-import Footer from '../components/footer/footer';
+import React from "react";
+import Menu from "../components/menu/menu";
+import Footer from "../components/footer/footer";
+import produtos from "../data/produtos.json";
+import Card from "../components/Card";
 
 const Produtos = () => {
-    return (
-        <>
-            <Menu />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Menu />
+
+      <div className="container">
+        <h1>Produtos</h1>
+        <div className="grid">
+          {produtos.map((produto) => (
+            <Card
+              key={produto.id}
+              titulo={produto.nome}
+              texto={produto.descricao}
+              imagem={produto.imagem}
+            />
+          ))}
+        </div>
+      </div>
+
+      <Footer />
+    </>
+  );
 };
 
 export default Produtos;

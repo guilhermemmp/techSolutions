@@ -1,0 +1,116 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+input,
+textarea {
+  padding: 10px;
+}
+button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+}
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+/* responsivo */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* imagem */
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.4s ease;
+  }
+  
+  /* brilho */
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,0.6),
+      transparent
+    );
+    transform: skewX(-25deg);
+  }
+  
+  /* hover card */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+  
+  /* zoom imagem */
+  .card:hover img {
+    transform: scale(1.08);
+  }
+  
+  /* animação do brilho */
+  .card:hover::before {
+    animation: shine 0.8s forwards;
+  }
+  
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
