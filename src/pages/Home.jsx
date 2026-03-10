@@ -45,62 +45,62 @@ const Home = () => {
           <h2>Informações</h2>
           <div className="grid">
             <Card
-              titulo="Serviço 1"
+              titulo="Desbloqueio de PS2"
               texto="Descrição do serviço"
-              imagem="https://picsum.photos/200?1"
+              imagem="https://i.ebayimg.com/images/g/820AAOSw85NgkobZ/s-l400.jpg"
             />
             <Card
-              titulo="Serviço 2"
+              titulo="Manutenção do Console"
               texto="Descrição do serviço"
-              imagem="https://picsum.photos/200?2"
+              imagem="https://preview.redd.it/ps2-slim-scph-90001-free-mcboot-able-absolutely-disgusting-v0-czuc4v32i5pb1.jpg?width=4032&format=pjpg&auto=webp&s=d3e3433fb0c1f3a4e460665baea153f76206ffc9"
             />
             <Card
-              titulo="Serviço 3"
+              titulo="Leitor Óptico"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?3"
             />
             <Card
-              titulo="Serviço 4"
+              titulo="Instalação de HD"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?4"
             />
             <Card
-              titulo="Serviço 5"
+              titulo="Backup de Jogos"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?5"
             />
             <Card
-              titulo="Serviço 6"
+              titulo="Conversão de Região"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?6"
             />
             <Card
-              titulo="Serviço 7"
+              titulo="Instalação de OPL"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?7"
             />
             <Card
-              titulo="Serviço 8"
+              titulo="Atualização de Sistema"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?8"
             />
             <Card
-              titulo="Serviço 9"
+              titulo="Limpeza Completa"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?9"
             />
             <Card
-              titulo="Serviço 10"
+              titulo="Troca de Peças"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?10"
             />
             <Card
-              titulo="Serviço 11"
+              titulo="Configuração de Controles"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?11"
             />
             <Card
-              titulo="Serviço 12"
+              titulo="Otimização do Console"
               texto="Descrição do serviço"
               imagem="https://picsum.photos/200?12"
             />
