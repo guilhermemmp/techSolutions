@@ -6,7 +6,7 @@ const Menu = () => {
     return (
         
         <nav className="menu">
-            <h1 className='logo'>MeuPS2</h1>
+            <h1 className='logo'>Meu<span>PS2</span></h1>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/produtos">Produtos</Link></li>
