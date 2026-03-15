@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Menu from "../components/menu/menu";
-import Footer from "../components/footer/footer";
+import Menu from "../../components/menu/menu";
+import Footer from "../../components/footer/footer";
+import "./contato.css";
 
 function Contato() {
   const [nome, setNome] = useState("");

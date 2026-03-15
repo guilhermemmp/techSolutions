@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import Empresa from './pages/Empresa';
-import Contato from './pages/Contato';
+import Contato from './pages/contato/Contato';
 
 function App() {
 
