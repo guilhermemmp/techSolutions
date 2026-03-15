@@ -1,5 +1,34 @@
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("/src/assets/img/ps2.png");
+  background-size: cover;
+  background-position: center;
+
+  z-index: -1;
+}
+
+.background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.1);
+
+  z-index: -1;
 }
 
 #root {
@@ -21,19 +50,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -52,10 +69,10 @@ button {
 }
 
 .carousel img {
-    height: 400px;
-    object-fit: cover;
-  }
-  
+  height: 400px;
+  object-fit: cover;
+}
+
 /* responsivo */
 @media (max-width: 900px) {
   .grid {
@@ -69,61 +86,63 @@ button {
 }
 
 .card {
-    position: relative;
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* imagem */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.4s ease;
+}
+
+/* brilho */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+/* hover card */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* zoom imagem */
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* animação do brilho */
+.card:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
   }
-  
-  /* imagem */
-  .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 6px;
-    transition: transform 0.4s ease;
-  }
-  
-  /* brilho */
-  .card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      rgba(255,255,255,0.6),
-      transparent
-    );
-    transform: skewX(-25deg);
-  }
-  
-  /* hover card */
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-  }
-  
-  /* zoom imagem */
-  .card:hover img {
-    transform: scale(1.08);
-  }
-  
-  /* animação do brilho */
-  .card:hover::before {
-    animation: shine 0.8s forwards;
-  }
-  
-  @keyframes shine {
-    100% {
-      left: 125%;
-    }
-  }
+}

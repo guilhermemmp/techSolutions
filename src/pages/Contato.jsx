@@ -12,6 +12,7 @@ function Contato() {
   }
   return (
     <>
+    <div className="background"></div>
         <Menu />
      <div className="container">
       <h1>Contato</h1>

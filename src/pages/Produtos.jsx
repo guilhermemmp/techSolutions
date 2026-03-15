@@ -7,8 +7,8 @@ import Card from "../components/Card";
 const Produtos = () => {
   return (
     <>
+      <div className="background"></div>
       <Menu />
-
       <div className="container">
         <h1>Produtos</h1>
         <div className="grid">

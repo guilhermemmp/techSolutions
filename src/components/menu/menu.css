@@ -11,8 +11,8 @@
   box-sizing: border-box;
 }
 
-span{
-  font-family: 'BTSEPS2', sans-serif;
+span {
+  font-family: "BTSEPS2", sans-serif;
   font-size: 44px;
   margin-left: 5px;
 }
@@ -22,24 +22,34 @@ body {
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    background: #111;
-    padding: 15px 40px;
-    position: relative;
-  }
+  position: sticky;
+  top: 0;
 
-  .menu ul {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  
-    display: flex;
-    gap: 35px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 40px;
+
+  backdrop-filter: blur(10px);
+  background: rgba(10, 15, 40, 0.5);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  z-index: 10;
+}
+
+.menu ul {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .menu a {
   text-decoration: none;
@@ -72,16 +82,14 @@ body {
 }
 
 .logo {
-    font-size: 26px;
-    font-weight: 700;
-    color: white;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* efeito hover */
-  .logo:hover {
-    color: #00bfff;
-    transform: scale(1.05);
-  }
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* efeito hover */
+.logo:hover {
+  color: #00bfff;
+  transform: scale(1.05);
+}

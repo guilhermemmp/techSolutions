@@ -5,6 +5,7 @@ import Footer from "../components/footer/footer";
 const Empresa = () => {
   return (
     <>
+      <div className="background"></div>
       <Menu />
       <div className="container">
         <h1>Sobre a Empresa</h1>
