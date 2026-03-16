@@ -4,7 +4,7 @@ import Footer from "../components/footer/footer";
 import servicos from "../data/servicos.json";
 import CarouselHome from "../components/Carousel";
 import Card from "../components/card/card";
-import "../styles/style.css";
+import "../styles/global.css";
 
 const Home = () => {
   return (
@@ -15,16 +15,6 @@ const Home = () => {
         <div className="container">
           <CarouselHome />
           <h2>Informações</h2>
-          <div className="grid">
-            {servicos.map((servico) => (
-            <Card
-              key={servico.id}
-              titulo={servico.titulo}
-              texto={servico.texto}
-              imagem={servico.imagem}
-            />
-          ))}
-          </div>
         </div>
       </main>
       <Footer />
